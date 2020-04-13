@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="634.0" prefWidth="622.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AdminaddPageController">
+  <tabs>
+    <Tab text="Location">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="locationCountry" layoutX="124.0" layoutY="56.0" prefHeight="24.0" prefWidth="348.0" promptText="Country">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="LocationCity" layoutX="124.0" layoutY="115.0" prefHeight="24.0" prefWidth="348.0" promptText="City">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <Button fx:id="addLocation" layoutX="219.0" layoutY="534.0" mnemonicParsing="false" onAction="#addLocation" prefHeight="39.0" prefWidth="138.0" text="Add Location">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </Button>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Customer">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="customerId" layoutX="137.0" layoutY="45.0" prefHeight="24.0" prefWidth="348.0" promptText="id">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="customerFirst" layoutX="137.0" layoutY="78.0" prefHeight="24.0" prefWidth="348.0" promptText="First Name">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="customerLast" layoutX="137.0" layoutY="111.0" prefHeight="24.0" prefWidth="348.0" promptText="Last Name">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="customerEmail" layoutX="137.0" layoutY="143.0" prefHeight="24.0" prefWidth="348.0" promptText="Email">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="customerCountry" layoutX="137.0" layoutY="177.0" prefHeight="24.0" prefWidth="348.0" promptText="Country">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="customerCity" layoutX="137.0" layoutY="211.0" prefHeight="24.0" prefWidth="348.0" promptText="City">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="customerStreet" layoutX="137.0" layoutY="244.0" prefHeight="24.0" prefWidth="348.0" promptText="Street">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="customerHouse" layoutX="137.0" layoutY="277.0" prefHeight="24.0" prefWidth="348.0" promptText="House Number">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="customerPhone" layoutX="137.0" layoutY="310.0" prefHeight="24.0" prefWidth="348.0" promptText="Phone Number">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <DatePicker fx:id="customerBirth" layoutX="137.0" layoutY="343.0" prefHeight="25.0" prefWidth="348.0" promptText="Birth Date">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </DatePicker>
+                  <Button fx:id="addCustomer" layoutX="231.0" layoutY="529.0" mnemonicParsing="false" onAction="#addCustomer" prefHeight="39.0" prefWidth="138.0" text="Add Customer">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </Button>
+                  <TextField fx:id="customerPass" layoutX="137.0" layoutY="377.0" prefHeight="24.0" prefWidth="348.0" promptText="Password">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="customerPassVerify" layoutX="137.0" layoutY="411.0" prefHeight="24.0" prefWidth="348.0" promptText="Veify Password">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="customerQuestion" layoutX="137.0" layoutY="445.0" prefHeight="24.0" prefWidth="348.0" promptText="What is your birth City?">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Guide">
+         <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="guideId" layoutX="14.0" layoutY="21.0" prefHeight="24.0" prefWidth="348.0" promptText="id">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="guideFirst" layoutX="14.0" layoutY="54.0" prefHeight="24.0" prefWidth="348.0" promptText="First Name">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="guideLast" layoutX="14.0" layoutY="87.0" prefHeight="24.0" prefWidth="348.0" promptText="Last Name">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="guideEmail" layoutX="14.0" layoutY="119.0" prefHeight="24.0" prefWidth="348.0" promptText="Email">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="guideCountry" layoutX="14.0" layoutY="153.0" prefHeight="24.0" prefWidth="348.0" promptText="Country">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="guideCity" layoutX="14.0" layoutY="187.0" prefHeight="24.0" prefWidth="348.0" promptText="City">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="guideStreet" layoutX="14.0" layoutY="220.0" prefHeight="24.0" prefWidth="348.0" promptText="Street">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="guideHouse" layoutX="14.0" layoutY="253.0" prefHeight="24.0" prefWidth="348.0" promptText="House Number">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="guidePhone" layoutX="14.0" layoutY="286.0" prefHeight="24.0" prefWidth="348.0" promptText="Phone Number">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <DatePicker fx:id="guideBirth" layoutX="14.0" layoutY="319.0" prefHeight="25.0" prefWidth="348.0" promptText="Birth Date">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </DatePicker>
+                  <Button fx:id="addGuide" layoutX="241.0" layoutY="550.0" mnemonicParsing="false" onAction="#addGuide" prefHeight="39.0" prefWidth="138.0" text="Add Guide">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </Button>
+                  <TextField fx:id="guidePass" layoutX="14.0" layoutY="353.0" prefHeight="24.0" prefWidth="348.0" promptText="Password">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="guidePassVerify" layoutX="14.0" layoutY="387.0" prefHeight="24.0" prefWidth="348.0" promptText="Veify Password">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="guideQuestion" layoutX="14.0" layoutY="421.0" prefHeight="24.0" prefWidth="348.0" promptText="What is your birth City?">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <DatePicker fx:id="startDate" layoutX="14.0" layoutY="454.0" prefHeight="25.0" prefWidth="348.0" promptText="startDate">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </DatePicker>
+                  <ComboBox fx:id="guideDestinations" layoutX="391.0" layoutY="265.0" prefHeight="26.0" prefWidth="218.0" promptText="Add Experienced Destinations" />
+                  <Button fx:id="guideAddtoList" layoutX="398.0" layoutY="299.0" mnemonicParsing="false" onAction="#addToExpList" prefHeight="36.0" prefWidth="75.0" text="Add to List" />
+                  <Button fx:id="guideClearList" layoutX="507.0" layoutY="299.0" mnemonicParsing="false" onAction="#ClearExpList" prefHeight="36.0" prefWidth="75.0" text="Clear List" />
+                  <TextArea fx:id="guideListOfExpDestinations" layoutX="388.0" layoutY="19.0" prefHeight="214.0" prefWidth="221.0" />
+               </children></AnchorPane>
+      </content>
+      </Tab>
+      <Tab text="Hotel">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="addHotel" layoutX="231.0" layoutY="529.0" mnemonicParsing="false" onAction="#addHotel" prefHeight="39.0" prefWidth="138.0" text="Add Hotel">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </Button>
+                  <TextField fx:id="hotelStars" layoutX="146.0" layoutY="326.0" prefHeight="24.0" prefWidth="348.0" promptText="Number of Stars">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="hotelId" layoutX="146.0" layoutY="86.0" prefHeight="24.0" prefWidth="348.0" promptText="Hotel id">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="hotelName" layoutX="146.0" layoutY="119.0" prefHeight="24.0" prefWidth="348.0" promptText="Hotel Name">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="hotelRooms" layoutX="146.0" layoutY="153.0" prefHeight="24.0" prefWidth="348.0" promptText="Number of Rooms">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="hotelPeoplePerRoom" layoutX="146.0" layoutY="188.0" prefHeight="24.0" prefWidth="348.0" promptText="Number of People Per Room">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="hotelPrice" layoutX="146.0" layoutY="291.0" prefHeight="24.0" prefWidth="348.0" promptText="Price Per Person">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <CheckBox fx:id="hotelPool" layoutX="394.0" layoutY="385.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="102.0" text="Has Pool">
+                     <font>
+                        <Font name="Arial Bold Italic" size="16.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="HotelBreakfast" layoutX="146.0" layoutY="385.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="160.0" text="Serves Breakfast">
+                     <font>
+                        <Font name="Arial Bold Italic" size="16.0" />
+                     </font>
+                  </CheckBox>
+                  <ComboBox fx:id="hotelCountry" layoutX="146.0" layoutY="222.0" onAction="#showCitiesHotel" prefHeight="26.0" prefWidth="347.0" promptText="Country" />
+                  <ComboBox fx:id="hotelCity" layoutX="146.0" layoutY="257.0" prefHeight="26.0" prefWidth="347.0" promptText="City" />
+               </children></AnchorPane>
+            
+         </content>
+      </Tab>
+      <Tab text="Motel">
+        <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="addMotel" layoutX="231.0" layoutY="529.0" mnemonicParsing="false" onAction="#addMotel" prefHeight="39.0" prefWidth="138.0" text="Add Motel">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </Button>
+                  <TextField fx:id="motelId" layoutX="146.0" layoutY="86.0" prefHeight="24.0" prefWidth="348.0" promptText="Motel id">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="motelName" layoutX="146.0" layoutY="119.0" prefHeight="24.0" prefWidth="348.0" promptText="Motel Name">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="motelNumOfRooms" layoutX="146.0" layoutY="153.0" prefHeight="24.0" prefWidth="348.0" promptText="Number of Rooms">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="motelPeoplePerRoom" layoutX="146.0" layoutY="188.0" prefHeight="24.0" prefWidth="348.0" promptText="Number of People Per Room">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="motelPricePerPerson" layoutX="146.0" layoutY="291.0" prefHeight="24.0" prefWidth="348.0" promptText="Price Per Person">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <CheckBox fx:id="motelWIFI" layoutX="394.0" layoutY="349.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="102.0" text="Has WIFI">
+                     <font>
+                        <Font name="Arial Bold Italic" size="16.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="motelKitchen" layoutX="146.0" layoutY="349.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="160.0" text="Has Kitchen">
+                     <font>
+                        <Font name="Arial Bold Italic" size="16.0" />
+                     </font>
+                  </CheckBox>
+                  <ComboBox fx:id="motelCountry" layoutX="146.0" layoutY="222.0" onAction="#showCitiesMotel" prefHeight="26.0" prefWidth="347.0" promptText="Country" />
+                  <ComboBox fx:id="motelCity" layoutX="146.0" layoutY="256.0" prefHeight="26.0" prefWidth="347.0" promptText="City" />
+               </children></AnchorPane>
+            
+         </content>
+      </Tab>
+      <Tab text="Hostel">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="addHostel" layoutX="231.0" layoutY="529.0" mnemonicParsing="false" onAction="#addHostel" onDragDetected="#addHostel" prefHeight="39.0" prefWidth="138.0" text="Add Hostel">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </Button>
+                  <TextField fx:id="hostelId" layoutX="146.0" layoutY="86.0" prefHeight="24.0" prefWidth="348.0" promptText="Hostel id">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="hostelName" layoutX="146.0" layoutY="119.0" prefHeight="24.0" prefWidth="348.0" promptText="Hostel Name">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="hostelNumOfRooms" layoutX="146.0" layoutY="153.0" prefHeight="24.0" prefWidth="348.0" promptText="Number of Rooms">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="hostelNumOfPeople" layoutX="146.0" layoutY="188.0" prefHeight="24.0" prefWidth="348.0" promptText="Number of People Per Room">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="hostelPricePerPerson" layoutX="146.0" layoutY="291.0" prefHeight="24.0" prefWidth="348.0" promptText="Price Per Person">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <ComboBox fx:id="hostelType" layoutX="146.0" layoutY="325.0" prefHeight="26.0" prefWidth="234.0" promptText="Accommodation Type" />
+                  <ComboBox fx:id="hostelCountry" layoutX="146.0" layoutY="222.0" onAction="#showCitiesHostel" prefHeight="26.0" prefWidth="347.0" promptText="Country" />
+                  <ComboBox fx:id="hostelCity" layoutX="146.0" layoutY="255.0" prefHeight="26.0" prefWidth="347.0" promptText="City" />
+               </children></AnchorPane>
+            
+         </content>
+      </Tab>
+      <Tab text="GroupTrip">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="tripId" layoutX="123.0" layoutY="56.0" prefHeight="24.0" prefWidth="348.0" promptText="Trip id">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="tripPrice" layoutX="123.0" layoutY="211.0" prefHeight="24.0" prefWidth="348.0" promptText="Price">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <DatePicker fx:id="tripDate" layoutX="123.0" layoutY="250.0" prefHeight="25.0" prefWidth="348.0" promptText="Date">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </DatePicker>
+                  <Button fx:id="addTrip" layoutX="209.0" layoutY="530.0" mnemonicParsing="false" onAction="#addGroupTrip" prefHeight="39.0" prefWidth="138.0" text="Add Group Trip">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </Button>
+                  <TextArea fx:id="tripDescription" layoutX="123.0" layoutY="329.0" prefHeight="39.0" prefWidth="348.0" promptText="Group Trip Description" />
+                  <ComboBox fx:id="tripCountry" layoutX="123.0" layoutY="133.0" onAction="#showCitiesTrip" prefHeight="26.0" prefWidth="347.0" promptText="Country" />
+                  <ComboBox fx:id="tripCity" layoutX="123.0" layoutY="172.0" prefHeight="26.0" prefWidth="347.0" promptText="City" />
+                  <TextField fx:id="tripPeople" layoutX="123.0" layoutY="290.0" prefHeight="24.0" prefWidth="348.0" promptText="Number Of People">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <ComboBox fx:id="tripGuideId" layoutX="123.0" layoutY="94.0" prefHeight="26.0" prefWidth="347.0" promptText="Guide ID" />
+               </children></AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Package">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="packageName" layoutX="130.0" layoutY="34.0" prefHeight="24.0" prefWidth="348.0" promptText="Package Name">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="packageNumOfPeople" layoutX="130.0" layoutY="70.0" prefHeight="24.0" prefWidth="348.0" promptText="Number of People">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="packagePrice" layoutX="130.0" layoutY="106.0" prefHeight="24.0" prefWidth="348.0" promptText="Price">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <ComboBox fx:id="packageFlights" layoutX="14.0" layoutY="180.0" prefHeight="26.0" prefWidth="173.0" promptText="Flights" />
+                  <ComboBox fx:id="packageAccommodations" layoutX="212.0" layoutY="180.0" prefHeight="26.0" prefWidth="173.0" promptText="Accommodations" />
+                  <ComboBox fx:id="packageGroupTrip" layoutX="424.0" layoutY="180.0" prefHeight="26.0" prefWidth="172.0" promptText="Groups Trips" />
+                  <Button fx:id="addPackage" layoutX="230.0" layoutY="518.0" mnemonicParsing="false" onAction="#addPackage" prefHeight="39.0" prefWidth="138.0" text="Add Package">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="packageAddFlights" layoutX="29.0" layoutY="215.0" mnemonicParsing="false" onAction="#addToPackageFlightList" text="add" />
+                  <Button fx:id="packageClearFlights" layoutX="90.0" layoutY="215.0" mnemonicParsing="false" onAction="#ClearFlightList" text="Clear List" />
+                  <Button fx:id="packageaddAccommodations" layoutX="237.0" layoutY="215.0" mnemonicParsing="false" onAction="#addToAccommodationFlightList" text="add" />
+                  <Button fx:id="packageClearAccommodations" layoutX="298.0" layoutY="215.0" mnemonicParsing="false" onAction="#ClearAccommodationList" text="Clear List" />
+                  <Button fx:id="packageAddTrips" layoutX="440.0" layoutY="215.0" mnemonicParsing="false" onAction="#addToPackageTripList" text="add" />
+                  <Button fx:id="PackageClearTrips" layoutX="501.0" layoutY="215.0" mnemonicParsing="false" onAction="#ClearTripList" text="Clear List" />
+                  <TextArea fx:id="packageFlightListView" layoutX="14.0" layoutY="251.0" prefHeight="200.0" prefWidth="173.0" />
+                  <TextArea fx:id="packageAccommodationListView" layoutX="212.0" layoutY="251.0" prefHeight="200.0" prefWidth="173.0" />
+                  <TextArea fx:id="packagetTripsListView" layoutX="423.0" layoutY="251.0" prefHeight="200.0" prefWidth="173.0" />
+               </children></AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Experienced Destination">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="addGuideExp" layoutX="184.0" layoutY="517.0" mnemonicParsing="false" onAction="#addGuideExp" prefHeight="39.0" prefWidth="240.0" text="Add Destination to Guide">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </Button>
+                  <ComboBox fx:id="guideExpCountry" layoutX="130.0" layoutY="85.0" onAction="#showCitiesExperiencedDestinations" prefHeight="26.0" prefWidth="347.0" promptText="Country" />
+                  <ComboBox fx:id="guideExpCity" layoutX="130.0" layoutY="145.0" prefHeight="26.0" prefWidth="347.0" promptText="City" />
+                  <Label fx:id="expCertificateLabel" layoutX="280.0" layoutY="201.0" prefHeight="35.0" prefWidth="369.0" />
+                  <Button fx:id="expCertificate" layoutX="130.0" layoutY="202.0" mnemonicParsing="false" onAction="#uploadCertificate" prefHeight="33.0" prefWidth="127.0" text="Add Certificate" />
+                  <ComboBox fx:id="guideExpId" layoutX="130.0" layoutY="29.0" prefHeight="26.0" prefWidth="347.0" promptText="Guide id" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Flight">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="flightNum" layoutX="137.0" layoutY="48.0" prefHeight="24.0" prefWidth="348.0" promptText="Flight Number">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="flightSeats" layoutX="137.0" layoutY="88.0" prefHeight="24.0" prefWidth="348.0" promptText="Number of Seats">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="flightPrice" layoutX="137.0" layoutY="289.0" prefHeight="24.0" prefWidth="348.0" promptText="Price">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <DatePicker fx:id="flightDate" layoutX="137.0" layoutY="330.0" prefHeight="25.0" prefWidth="348.0" promptText="Date">
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </DatePicker>
+                  <Button fx:id="addCustomer1" layoutX="231.0" layoutY="529.0" mnemonicParsing="false" onAction="#addFlight" prefHeight="39.0" prefWidth="138.0" text="Add Flight">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                  </Button>
+                  <ComboBox fx:id="flightFromCountry" layoutX="137.0" layoutY="128.0" onAction="#showFromCitiesFlight" prefHeight="26.0" prefWidth="347.0" promptText="From Country" />
+                  <ComboBox fx:id="flightFromCity" layoutX="137.0" layoutY="169.0" prefHeight="26.0" prefWidth="347.0" promptText="From City" />
+                  <ComboBox fx:id="flightToCountry" layoutX="137.0" layoutY="209.0" onAction="#showToCitiesFlight" prefHeight="26.0" prefWidth="347.0" promptText="To Country" />
+                  <ComboBox fx:id="flightToCity" layoutX="137.0" layoutY="249.0" prefHeight="26.0" prefWidth="347.0" promptText="To City" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>

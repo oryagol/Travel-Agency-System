@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView fx:id="accommodationTable" prefHeight="435.0" prefWidth="648.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AccommodationTableController">
+   <columns>
+      <TableColumn fx:id="accommodationLocation" prefWidth="173.60004425048828" text="Location" />
+      <TableColumn fx:id="accommodationId" prefWidth="55.199951171875" text="ID" />
+      <TableColumn fx:id="accommodationRooms" prefWidth="118.4000244140625" text="Number Of Rooms" />
+      <TableColumn fx:id="accommodationPPR" prefWidth="124.79998779296875" text="People Per Room" />
+      <TableColumn fx:id="accommodationPrice" prefWidth="76.79995727539062" text="Price" />
+      <TableColumn fx:id="accommodationType" prefWidth="129.5999755859375" text="Type" />
+   </columns>
+</TableView>

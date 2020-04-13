@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView prefHeight="454.0" prefWidth="659.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.XorTableController" fx:id="xorTable">
+   <columns>
+      <TableColumn prefWidth="55.20004117488861" text="ID" fx:id="xorID" />
+      <TableColumn prefWidth="115.9999771118164" text="First Name" fx:id="xorFirst" />
+      <TableColumn prefWidth="99.20001220703125" text="Last Name" fx:id="xorLast" />
+      <TableColumn prefWidth="111.20001220703125" text="Birth Date" fx:id="xorBirth" />
+      <TableColumn prefWidth="73.5999755859375" text="Email" fx:id="xorEmail" />
+      <TableColumn prefWidth="108.80001831054688" text="Address" fx:id="xorAddress" />
+   </columns>
+</TableView>

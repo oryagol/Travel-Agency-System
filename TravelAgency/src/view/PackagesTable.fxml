@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView fx:id="packagesInRangeTable" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="434.0" prefWidth="765.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.PackageTableController">
+   <columns>
+      <TableColumn fx:id="packagesName" prefWidth="172.79998171329498" text="Name" />
+      <TableColumn fx:id="packagesId" prefWidth="186.39996337890625" text="Order ID" />
+      <TableColumn fx:id="packagesQunatity" prefWidth="218.40005493164062" text="Max Quantity" />
+      <TableColumn fx:id="packagesPrice" prefWidth="187.20001220703125" text="Price" />
+   </columns>
+</TableView>

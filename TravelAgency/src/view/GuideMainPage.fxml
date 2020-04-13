@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="mainPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="653.0" prefWidth="892.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.GuideMainPageController">
+   <children>
+      <BorderPane prefHeight="730.0" prefWidth="892.0">
+         <right>
+            <VBox prefHeight="650.0" prefWidth="145.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ToggleButton fx:id="add" contentDisplay="TOP" mnemonicParsing="false" onAction="#loadAdd" prefHeight="118.0" prefWidth="136.0" styleClass="button" stylesheets="@background.css" text="Add to System">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" top="5.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/plus.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Arial Bold" size="17.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </ToggleButton>
+                  <ToggleButton fx:id="db" contentDisplay="TOP" mnemonicParsing="false" onAction="#loadDB" prefHeight="118.0" prefWidth="136.0" styleClass="button" stylesheets="@background.css" text="Information">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" top="5.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/information.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Arial Bold" size="17.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </ToggleButton>
+                  <ToggleButton fx:id="log" contentDisplay="TOP" mnemonicParsing="false" onAction="#logOutSys" prefHeight="126.0" prefWidth="208.0" styleClass="button" stylesheets="@background.css" text="Log Out">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" top="5.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/logout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </ToggleButton>
+                  <ToggleButton fx:id="exit" contentDisplay="TOP" mnemonicParsing="false" onAction="#exitProgrem" prefHeight="126.0" prefWidth="208.0" styleClass="button" stylesheets="@background.css" text="Exit">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" top="5.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/logout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </ToggleButton>
+               </children>
+            </VBox>
+         </right>
+         <center>
+            <AnchorPane fx:id="rootPane" prefHeight="651.0" prefWidth="746.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>
